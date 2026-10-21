@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U.E. Monseñor Felipe Nery Sandrea</title>
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #319795;
+            --bg-color: #f7fafc;
+            --text-color: #2d3748;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2.5rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #2d3748;
+            display: flex;
+            justify-content: center;
+            padding: 0.8rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1.2rem;
+            margin: 0 0.3rem;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            background-color: var(--accent-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background: white;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin: 0.3rem 0;
+                width: 80%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Unidad Educativa Monseñor Felipe Nery Sandrea</h1>
+        <p>Formación integral, valores y compromiso tecnológico en San Francisco, Estado Zulia</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Reseña Histórica</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#comunidad">Comunidad</a>
+    </nav>
+
+    <div class="container">
+        <section id="inicio">
+            <h2>Bienvenidos a Nuestra Institución</h2>
+            <p>La Unidad Educativa Monseñor Felipe Nery Sandrea se consolida como un pilar fundamental en la formación académica, moral y social de la comunidad de San Francisco. Desde nuestros inicios, nos dedicamos a brindar herramientas pedagógicas de calidad que preparan a las nuevas generaciones para enfrentar con éxito los retos educativos del mañana.</p>
+            <p>Nuestro compromiso está orientado hacia la excelencia, fomentando un ambiente de respeto, integración comunitaria e innovación tecnológica.</p>
+        </section>
+
+        <section id="historia">
+            <h2>Reseña Histórica</h2>
+            <p>La historia de la institución está profundamente ligada a la trayectoria de la docente Rebeca Soto de Molero, quien en el año 1934, preocupada por la carencia de planteles y la gran cantidad de niños sin escolaridad en el sector, logró establecer un aula de primer grado en una casa vieja alquilada.</p>
+            <p>Años más tarde, durante el periodo escolar 1959–1960, fue registrada oficialmente por el Ministerio de Educación con el nombre de Escuela Nacional Graduada “Monseñor Felipe Nery Sandrea”, rindiendo honor al ilustre obispo zuliano.</p>
+        </section>
+
+        <section id="ubicacion">
+            <h2>Ubicación Geográfica</h2>
+            <p>Nos encontramos ubicados en la <strong>República Bolivariana de Venezuela, Municipio San Francisco, Estado Zulia</strong>. Específicamente en la Parroquia El Bajo, sector El Paraíso (Calle 35 con Avenida 11a).</p>
+            <div class="info-grid">
+                <div class="card">
+                    <h3>Límites del Sector</h3>
+                    <p>Norte con el Barrio San Benito, Sur con la Calle 43 (San Miguel), Este próximo al Lago de Maracaibo y Oeste con la Avenida 48.</p>
+                </div>
+                <div class="card">
+                    <h3>Coordenadas</h3>
+                    <p>Latitud: 10.5349 msnm<br>Longitud: 71.6301</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="comunidad">
+            <h2>Población Institucional</h2>
+            <p>La institución cuenta con una comunidad activa y comprometida que supera los 650 integrantes, distribuidos armónicamente para garantizar el funcionamiento operativo y académico:</p>
+            <div class="info-grid">
+                <div class="card">
+                    <h3>Estudiantes</h3>
+                    <p>Más de 600 alumnos formándose desde la etapa preescolar hasta la educación básica primaria.</p>
+                </div>
+                <div class="card">
+                    <h3>Personal Docente y Obrero</h3>
+                    <p>Un equipo de 26 docentes activos, personal directivo, maestros especiales y obreros dedicados al mantenimiento y guía institucional.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Unidad Educativa Monseñor Felipe Nery Sandrea. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
